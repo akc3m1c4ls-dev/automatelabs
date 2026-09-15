@@ -1,352 +1,715 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
 
 <head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
 
-    <meta charset="UTF-8">
+  <meta
+    name="description"
+    content="Useful digital products that make everyday work simpler."
+  >
 
-    <meta name="viewport"
-          content="width=device-width, initial-scale=1.0">
+  <title>AutomateLabs — less routine, more time</title>
 
-    <title>AutoMate Labs | AI & Business Automation</title>
+  <!-- Favicon -->
+  <link rel="icon" href="icons/favicon.png">
 
-    <link rel="icon" type="image/png" href="icons/favicon.png">
-
-    <link rel="stylesheet" href="style/style.css">
-
+  <!-- Styles -->
+  <link rel="stylesheet" href="style/style.css">
+  <link rel="stylesheet" href="style/chatbot.css">
 </head>
-<div class="background-layer">
-    <img src="icons/background.png" alt="">
-</div>
-
-<div class="haze-layer">
-    <img src="icons/background.png" alt="">
-</div>
-
 
 <body>
 
-    <!-- Z 0: ORIGINAL BACKGROUND -->
-    <div class="background-layer"></div>
+  <!-- =========================================================
+       NAVIGATION
+  ========================================================== -->
 
+  <header class="navbar">
 
-    <!-- Z 1: CENTRAL BLUE HAZE -->
-    <div class="haze-layer"></div>
+    <a
+      href="#home"
+      class="logo"
+      aria-label="AutomateLabs home"
+    >
+      <img
+        class="logo-mark"
+        src="icons/favicon.png"
+        alt=""
+      >
+      <span>AutomateLabs</span>
+    </a>
 
+    <nav
+      class="nav-links"
+      aria-label="Main navigation"
+    >
+      <a href="#home">Home</a>
 
-    <!-- Z 1.5: MOVING SHARDS -->
-    <div class="shard-layer">
+      <a
+        href="#products"
+        data-i18n="nav.products"
+      >
+        Services
+      </a>
 
-        <div class="shard shard-1"></div>
-        <div class="shard shard-2"></div>
-        <div class="shard shard-3"></div>
-        <div class="shard shard-4"></div>
-        <div class="shard shard-5"></div>
+      <a href="#about">About</a>
+
+      <a
+        href="#how"
+        data-i18n="nav.how"
+      >
+        How it works
+      </a>
+    </nav>
+
+    <div class="nav-actions">
+
+      <!-- Language selector -->
+      <div
+        class="language-picker"
+        aria-label="Language"
+      >
+        <button
+          class="active"
+          data-lang="en"
+        >
+          EN
+        </button>
+
+        <span>|</span>
+
+        <button data-lang="ru">
+          RUS
+        </button>
+
+        <span>|</span>
+
+        <button data-lang="et">
+          EE
+        </button>
+      </div>
+
+      <!-- Cart -->
+      <button
+        class="cart-button"
+        aria-label="Open cart"
+      >
+        <span data-i18n="cart.label">
+          Cart
+        </span>
+
+        <b class="cart-count">
+          0
+        </b>
+      </button>
 
     </div>
 
-
-    <!-- Z 2: WEBSITE -->
-    <div class="site-layer">
-
-        <header>
-
-            <nav>
-
-                <a href="/" class="logo">
-                    AutoMate Labs
-                </a>
-
-                <div class="nav-links">
-                    <a href="#services">Our Solutions</a>
-                    <a href="#about">About</a>
-                    <a href="#contact">Contact</a>
-                </div>
-
-                <div class="language"> 
-                    <b>ENG</b>
-                </div>
-
-            </nav>
-
-        </header>
-
-    <main>
-
-        <!-- HERO SLIDER -->
-
-        <div class="hero-slider">
-
-            <div class="hero-track">
+  </header>
 
 
-                <!-- CARD 1 -->
+  <!-- =========================================================
+       MAIN CONTENT
+  ========================================================== -->
 
-                <section class="hero-one hero-slide active">
-
-
-                    <h1>  
-                        Stop Losing Customers.
-                    </h1>
-
-                    <p class="hero-one-text">
-                        🚥  Roughly 78% of customers choose the business
-                        that responds first.
-                    </p>
-
-                    <p class="hero-one-undertext">
-                       😒 You know, no one really likes long waiting...
-                    </p>
-
-                </section>
+  <main>
 
 
-                <!-- CARD 2 -->
+    <!-- =======================================================
+         HERO
+    ======================================================== -->
 
-                <section class="hero-two hero-slide">
+    <section
+      id="home"
+      class="section-shell hero"
+    >
 
-    
-                    <h1>
-                        Stop Paying for Repetitive Work.
-                    </h1>
+      <!-- Hero copy -->
+      <div>
 
-                    <p class="hero-two-text">
-                        ⏱ About 40% of our valuable time is wasted
-                        on routine tasks.
-                    </p>
+        <p
+          class="eyebrow"
+          data-i18n="hero.eyebrow"
+        >
+          DIGITAL PRODUCTS THAT HELP
+        </p>
 
-                    <p class="hero-two-undertext">
-                        ⟳  Data entry, scheduling, emails and follow-ups,
-                        moving information between systems,
-                        and routine customer requests.
-                    </p>
+        <h1 data-i18n-html="hero.title">
+          Let your website do<br>
+          <em>the busy work.</em>
+        </h1>
 
-                </section>
+        <p
+          class="lead"
+          data-i18n="hero.text"
+        >
+          Make booking, customer questions and everyday tasks
+          simpler—so there’s more time for the work that matters.
+        </p>
 
+        <div class="button-row">
 
-                <!-- CARD 3 -->
+          <a
+            class="button primary"
+            href="#products"
+            data-i18n="hero.cta"
+          >
+            Explore products
+          </a>
 
-                <section class="hero-three hero-slide">
-
-                    <h1>
-                        🤖 Let's Get It Automated.
-                    </h1>
-
-                    <p class="hero-three-text">
-                        📈 Together, we can save your time and save your money.
-                    </p>
-
-                    <p class="hero-three-undertext">
-                        ⚡ We automate customer inquiries, connect your systems,
-                        and handle repetitive tasks for you.
-                    </p>
-
-                </section>
-
-
-            </div>
-
-
-            <!-- RUNNING BAR -->
-
-            <div class="hero-progress">
-
-                <div class="hero-progress-bar"></div>
-
-            </div>
-
+          <a
+            class="text-link"
+            href="#how"
+            data-i18n="hero.secondary"
+          >
+            See how it works →
+          </a>
 
         </div>
 
-        <!-- ABOUT -->
+        <p
+          class="hero-note"
+          data-i18n="hero.note"
+        >
+          You stay in control. We take care of the repeatable parts.
+        </p>
 
-        <section id="about">
-
-            <h2>How do we do it?</h2>
-
-            <div class="about-grid">
-
-                <article class="process-card">
-
-                    <img
-                        src="icons/discover.png"
-                        alt="Discover"
-                        class="process-icon"
-                    >
-
-                    <span>01</span>
-
-                    <h3>Discover</h3>
-
-                    <p>
-                        We identify repetitive work,
-                        bottlenecks, and opportunities
-                        for automation.
-                    </p>
-
-                </article>
+      </div>
 
 
-                <span class="about-arrow">→</span>
+      <!-- Booking preview -->
+      <div
+        class="booking-preview"
+        aria-label="Online booking product preview"
+      >
+
+        <div class="preview-top">
+
+          <span>
+            Studio North
+          </span>
+
+          <span class="dots">
+            <i></i>
+            <i></i>
+            <i></i>
+          </span>
+
+          <span class="preview-avatar">
+            S
+          </span>
+
+        </div>
 
 
-                <article class="process-card">
+        <div class="booking-body">
 
-                    <img
-                        src="icons/idea.png"
-                        alt="Design"
-                        class="process-icon"
-                    >
+          <p class="mini-label">
+            ONLINE BOOKING
+          </p>
 
-                    <span>02</span>
-
-                    <h3>Design</h3>
-
-                    <p>
-                        We design an automation system
-                        around your actual business process.
-                    </p>
-
-                </article>
+          <h3>
+            Find a time that works
+          </h3>
 
 
-                <span class="about-arrow">→</span>
+          <!-- Booking steps -->
+          <div class="booking-steps">
+
+            <span class="selected">
+              1 Service
+            </span>
+
+            <span>→</span>
+
+            <span>
+              2 Time
+            </span>
+
+            <span>→</span>
+
+            <span>
+              3 Confirm
+            </span>
+
+          </div>
 
 
-                <article class="process-card">
+          <!-- Selected service -->
+          <div class="service-choice">
 
-                    <img
-                        src="icons/setting.png"
-                        alt="Build"
-                        class="process-icon"
-                    >
+            <span class="service-icon">
+              ✦
+            </span>
 
-                    <span>03</span>
-
-                    <h3>Build</h3>
-
-                    <p>
-                        We build the integrations,
-                        AI agents, and automated workflows.
-                    </p>
-
-                </article>
-
-
-                <span class="about-arrow">→</span>
-
-
-                <article class="process-card">
-
-                    <img
-                        src="icons/progress.png"
-                        alt="Growth"
-                        class="process-icon"
-                    >
-
-                    <span>04</span>
-
-                    <h3>Grow</h3>
-
-                    <p>
-                        Your team gets time back while
-                        the system handles the repetitive work.
-                    </p>
-
-                </article>
-
+            <div>
+              <b>Consultation</b>
+              <small>45 min · €45</small>
             </div>
 
-        </section>
+            <b>✓</b>
 
-        <!-- SERVICES -->
-
-        <section id="services">
-
-            <h2>What we build</h2>
-
-            <div class="service-grid">
-
-                <article>
-
-                    <img src="icons/robot.png" alt="AI Assistant" class="service-icon">
-
-                    <h3>AI Assistants</h3>
-
-                    <p>
-                        AI-powered assistants that answer customer questions,
-                        qualify leads, and handle routine requests.
-                    </p>
-
-                </article>
+          </div>
 
 
-                <article>
+          <!-- Calendar -->
+          <div class="mini-calendar">
 
-                    <img src="icons/booking.png" alt="Booking Automation" class="service-icon">
+            <span>
+              Mon<br>
+              <b>12</b>
+            </span>
 
-                    <h3>Booking Automation</h3>
+            <span class="date-active">
+              Tue<br>
+              <b>13</b>
+            </span>
 
-                    <p>
-                        Automated availability, booking, confirmations,
-                        reminders, and customer communication.
-                    </p>
+            <span>
+              Wed<br>
+              <b>14</b>
+            </span>
 
-                </article>
+            <span>
+              Thu<br>
+              <b>15</b>
+            </span>
 
+            <span>
+              Fri<br>
+              <b>16</b>
+            </span>
 
-                <article>
-
-                    <img src="icons/workflow.png" alt="Workflow Automation" class="service-icon">
-
-                    <h3>Internal Workflow Automation</h3>
-
-                    <p>
-                        Connect your tools and automate repetitive
-                        administrative work.
-                    </p>
-
-                </article>
-
-            </div>
-
-        </section>
+          </div>
 
 
-        
+          <button class="preview-cta">
+            Choose 14:30
+          </button>
 
-        <!-- CONTACT -->
+        </div>
 
-        <section id="contact">
+      </div>
 
-            <h2>Let's automate Your business.</h2>
+    </section>
 
-            <p>
-                Tell us what you doing manually.
-                We'll get it automated.
-            </p>
 
-            <a href="mailto:hello@automatelabs.me">
-                hello@automatelabs.me
-            </a>
+    <!-- =======================================================
+         PRODUCTS
+    ======================================================== -->
 
-        </section>
+    <section
+      id="products"
+      class="section-shell products"
+    >
 
-    </main>
-     
-        <footer>
+      <div class="section-intro">
 
-            <p>
-                © 2026 AutoMate Labs
-            </p>
+        <p
+          class="eyebrow"
+          data-i18n="products.eyebrow"
+        >
+          READY-MADE PRODUCTS
+        </p>
 
-        </footer>
+        <h2 data-i18n-html="products.title">
+          Useful from day one.<br>
+          <em>Made to fit you.</em>
+        </h2>
+
+        <p data-i18n="products.text">
+          Start with a clear product, then make it your own.
+        </p>
+
+      </div>
+
+
+      <!-- Product carousel -->
+      <div class="carousel-wrap">
+
+        <button
+          class="carousel-arrow previous"
+          aria-label="Previous product"
+        >
+          ←
+        </button>
+
+        <div class="product-stage"></div>
+
+        <button
+          class="carousel-arrow next"
+          aria-label="Next product"
+        >
+          →
+        </button>
+
+      </div>
+
+
+      <div
+        class="carousel-dots"
+        aria-label="Choose product"
+      ></div>
+
+      <div
+        class="carousel-progress"
+        aria-hidden="true"
+      >
+        <span></span>
+      </div>
+
+    </section>
+
+
+    <!-- =======================================================
+         CUSTOM SOLUTIONS
+    ======================================================== -->
+
+    <section
+      id="custom"
+      class="section-shell custom-section"
+    >
+
+      <div>
+
+        <p
+          class="eyebrow"
+          data-i18n="custom.eyebrow"
+        >
+          NEED SOMETHING DIFFERENT?
+        </p>
+
+        <h2 data-i18n-html="custom.title">
+          Your work has its own rhythm.<br>
+          <em>We’ll build around it.</em>
+        </h2>
+
+        <p data-i18n="custom.text">
+          We’ll create a practical digital solution around your
+          people, process and customers.
+        </p>
+
+        <a
+          href="products/custom.html"
+          class="button primary"
+          data-i18n="custom.cta"
+        >
+          Custom solution
+        </a>
+
+      </div>
+
+
+      <!-- Custom solution flow -->
+      <div
+        class="custom-flow"
+        aria-hidden="true"
+      >
+
+        <div>
+          <span>01</span>
+          <b>Your day-to-day work</b>
+        </div>
+
+        <div>
+          <span>02</span>
+          <b>A clearer digital flow</b>
+        </div>
+
+        <div>
+          <span>03</span>
+          <b>More time for people</b>
+        </div>
+
+      </div>
+
+    </section>
+
+
+    <!-- =======================================================
+         HOW IT WORKS
+    ======================================================== -->
+
+    <section
+      id="how"
+      class="section-shell how"
+    >
+
+      <div class="section-intro">
+
+        <p
+          class="eyebrow"
+          data-i18n="how.eyebrow"
+        >
+          SIMPLE BY DESIGN
+        </p>
+
+        <h2 data-i18n-html="how.title">
+          A clear path to<br>
+          <em>easier work.</em>
+        </h2>
+
+      </div>
+
+
+      <div class="how-grid">
+
+        <!-- Step 01 -->
+        <article>
+
+          <span>01</span>
+
+          <h3 data-i18n="how.oneTitle">
+            Choose a product
+          </h3>
+
+          <p data-i18n="how.oneText">
+            Pick a practical starting point for the improvement
+            you want.
+          </p>
+
+        </article>
+
+
+        <!-- Step 02 -->
+        <article>
+
+          <span>02</span>
+
+          <h3 data-i18n="how.twoTitle">
+            Make it yours
+          </h3>
+
+          <p data-i18n="how.twoText">
+            Set the services, rules, content and connections
+            for your business.
+          </p>
+
+        </article>
+
+
+        <!-- Step 03 -->
+        <article>
+
+          <span>03</span>
+
+          <h3 data-i18n="how.threeTitle">
+            Use it with confidence
+          </h3>
+
+          <p data-i18n="how.threeText">
+            The product handles routine work while you keep
+            the final say.
+          </p>
+
+        </article>
+
+      </div>
+
+    </section>
+
+
+    <!-- =======================================================
+         ABOUT
+    ======================================================== -->
+
+    <section
+      id="about"
+      class="section-shell about-section"
+    >
+
+      <div>
+
+        <p class="eyebrow">
+          ABOUT AUTOMATELABS
+        </p>
+
+        <h2>
+          Useful technology.<br>
+          <em>Made human.</em>
+        </h2>
+
+      </div>
+
+
+      <div>
+
+        <p>
+          AutomateLabs creates calm, practical digital tools
+          for the parts of work that take too much time.
+          Every service starts with a real routine and ends
+          with a clearer experience for the people using it.
+        </p>
+
+
+        <div class="about-points">
+
+          <span>
+            Clear by design
+          </span>
+
+          <span>
+            Built around your work
+          </span>
+
+          <span>
+            Human in control
+          </span>
+
+        </div>
+
+      </div>
+
+    </section>
+
+
+    <!-- =======================================================
+         CLOSING CTA
+    ======================================================== -->
+
+    <section
+      class="section-shell closing"
+    >
+
+      <p
+        class="eyebrow"
+        data-i18n="closing.eyebrow"
+      >
+        WHEN YOU’RE READY
+      </p>
+
+      <h2 data-i18n-html="closing.title">
+        More room for people.<br>
+        <em>Less for routine.</em>
+      </h2>
+
+      <a
+        href="#products"
+        class="button primary"
+        data-i18n="closing.cta"
+      >
+        Find your product
+      </a>
+
+    </section>
+
+  </main>
+
+
+  <!-- =========================================================
+       FOOTER
+  ========================================================== -->
+
+  <footer>
+
+    <div class="logo">
+
+      <img
+        class="logo-mark"
+        src="icons/favicon.png"
+        alt=""
+      >
+
+      <span>
+        AutomateLabs
+      </span>
 
     </div>
 
-<script src="script/hero-cards.js"></script>
+    <span data-i18n="footer">
+      Useful digital products for everyday work.
+    </span>
 
-<script src="script/mouse-glow.js"></script>
+    <span class="copyright"></span>
+
+  </footer>
+
+
+  <!-- =========================================================
+       CART DRAWER
+  ========================================================== -->
+
+  <div class="drawer-backdrop"></div>
+
+
+  <aside
+    class="cart-drawer"
+    aria-label="Shopping cart"
+  >
+
+    <!-- Drawer header -->
+    <div class="drawer-head">
+
+      <div>
+
+        <span data-i18n="cart.label">
+          Cart
+        </span>
+
+        <h2 data-i18n="cart.title">
+          Your cart
+        </h2>
+
+      </div>
+
+      <button
+        class="drawer-close"
+        aria-label="Close cart"
+      >
+        ×
+      </button>
+
+    </div>
+
+
+    <!-- Cart items -->
+    <div class="cart-items"></div>
+
+
+    <!-- Empty cart message -->
+    <p
+      class="cart-empty"
+      data-i18n="cart.empty"
+    >
+      Your cart is ready when you are.
+    </p>
+
+
+    <!-- Cart footer -->
+    <div class="cart-footer">
+
+      <div>
+
+        <span data-i18n="cart.total">
+          Total
+        </span>
+
+        <b class="cart-total">
+          €0
+        </b>
+
+      </div>
+
+      <button
+        class="button primary checkout"
+        data-i18n="cart.checkout"
+      >
+        Checkout
+      </button>
+
+    </div>
+
+  </aside>
+
+
+  <!-- =========================================================
+       JAVASCRIPT
+  ========================================================== -->
+
+  <script src="script/script.js"></script>
+  <script src="script/chatbot.js"></script>
 
 </body>
 
