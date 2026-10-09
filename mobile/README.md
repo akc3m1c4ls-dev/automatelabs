@@ -1,0 +1,1 @@
+# AutomateLabs legacy mobile URLs\n\nThe /mobile/, /mobile/RU/ and /mobile/EE/ URLs redirect to the corresponding responsive canonical landing pages. They remain only for compatibility with old links.\n

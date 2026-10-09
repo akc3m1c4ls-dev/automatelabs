@@ -1,0 +1,8 @@
+User-agent: *
+Allow: /
+
+Disallow: /chatbot-api/
+Disallow: /mobile/
+
+Sitemap: https://automatelabs.me/sitemap.xml
+

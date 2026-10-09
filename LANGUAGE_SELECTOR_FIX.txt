@@ -1,0 +1,6 @@
+AutomateLabs language selector fix
+=================================
+The site now includes a compatibility layer for EN/ET(EE)/RU.
+It keeps the selected language in localStorage, updates <html lang>,
+translates data-i18n/data-en/data-et/data-ee/data-ru elements, and
+re-applies translation to dynamically inserted cards/content.

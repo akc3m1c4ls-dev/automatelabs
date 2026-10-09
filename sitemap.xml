@@ -1,0 +1,94 @@
+
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+
+  <!-- English -->
+  <url>
+    <loc>https://automatelabs.me/</loc>
+  </url>
+
+  <url>
+    <loc>https://automatelabs.me/products.html</loc>
+  </url>
+
+  <url>
+    <loc>https://automatelabs.me/products/ai-chatbot.html</loc>
+  </url>
+
+  <url>
+    <loc>https://automatelabs.me/products/custom.html</loc>
+  </url>
+
+  <url>
+    <loc>https://automatelabs.me/products/online-booking.html</loc>
+  </url>
+
+  <url>
+    <loc>https://automatelabs.me/products/routine-automation.html</loc>
+  </url>
+
+  <url>
+    <loc>https://automatelabs.me/products/website-upgrade.html</loc>
+  </url>
+
+
+  <!-- Estonian -->
+  <url>
+    <loc>https://automatelabs.me/EE/</loc>
+  </url>
+
+  <url>
+    <loc>https://automatelabs.me/EE/products.html</loc>
+  </url>
+
+  <url>
+    <loc>https://automatelabs.me/EE/products/ai-chatbot.html</loc>
+  </url>
+
+  <url>
+    <loc>https://automatelabs.me/EE/products/custom.html</loc>
+  </url>
+
+  <url>
+    <loc>https://automatelabs.me/EE/products/online-booking.html</loc>
+  </url>
+
+  <url>
+    <loc>https://automatelabs.me/EE/products/routine-automation.html</loc>
+  </url>
+
+  <url>
+    <loc>https://automatelabs.me/EE/products/website-upgrade.html</loc>
+  </url>
+
+
+  <!-- Russian -->
+  <url>
+    <loc>https://automatelabs.me/RU/</loc>
+  </url>
+
+  <url>
+    <loc>https://automatelabs.me/RU/products.html</loc>
+  </url>
+
+  <url>
+    <loc>https://automatelabs.me/RU/products/ai-chatbot.html</loc>
+  </url>
+
+  <url>
+    <loc>https://automatelabs.me/RU/products/custom.html</loc>
+  </url>
+
+  <url>
+    <loc>https://automatelabs.me/RU/products/online-booking.html</loc>
+  </url>
+
+  <url>
+    <loc>https://automatelabs.me/RU/products/routine-automation.html</loc>
+  </url>
+
+  <url>
+    <loc>https://automatelabs.me/RU/products/website-upgrade.html</loc>
+  </url>
+
+</urlset>

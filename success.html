@@ -1,0 +1,45 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <!-- Google tag (gtag.js) -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=AW-18462271355"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'AW-18462271355');
+  </script>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <meta name="robots" content="noindex">
+
+  <title>Checkout status | AutomateLabs</title>
+  <meta
+    name="description"
+    content="Check the status of an AutomateLabs checkout."
+  >
+
+  <link rel="icon" href="/icons/favicon.png">
+  <link rel="stylesheet" href="/style/style.css">
+  <link rel="stylesheet" href="/style/chatbot.css">
+  <link rel="stylesheet" href="/style/product-pages.css">
+
+  <script defer src="/script/checkout-status.js"></script>
+</head>
+<body>
+  <header class="navbar"><a href="/" class="logo"><img class="logo-mark" src="/icons/favicon.png" alt=""><span>AutomateLabs</span></a></header>
+  <main class="section-shell product-page">
+    <section class="product-purchase" aria-live="polite">
+      <p class="eyebrow">AUTOMATELABS</p>
+      <h1 id="payment-title">Checking your payment…</h1>
+      <p id="payment-message">Please wait while we check your checkout status.</p>
+      <button id="payment-retry" class="button primary" hidden>Check again</button>
+      <p><a class="button primary" id="payment-contact" href="mailto:contact@automatelabs.me">Contact AutomateLabs →</a></p>
+      <a id="payment-products" class="text-link" href="/products.html">Back to products</a>
+      <noscript><p>Enable JavaScript to check your payment status, or contact contact@automatelabs.me with your Stripe receipt.</p></noscript>
+    </section>
+  </main>
+</body>
+</html>

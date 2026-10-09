@@ -1,0 +1,4 @@
+#1. Add products: 
+## Language selectors 
+## Payment system integration 
+##
