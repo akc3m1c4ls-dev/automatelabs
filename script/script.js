@@ -670,9 +670,10 @@ function renderCarousel() {
               .join('')}
           </ul>
 
-          <p class="product-scope-short">
-            ${p.scopeShort || ''}
-          </p>
+          <div class="product-scope-short">
+            <span>PACKAGE INCLUDES</span>
+            <strong>${p.scopeShort || ''}</strong>
+          </div>
 
           <div class="product-actions">
 
